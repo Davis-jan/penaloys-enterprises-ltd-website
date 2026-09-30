@@ -1,14 +1,13 @@
 from pathlib import Path
-import shutil, zipfile, textwrap
+import shutil
 from flask import Flask, render_template
-from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 assets = BASE_DIR / "assets"
 assets.mkdir(parents=True, exist_ok=True)
 
-# Copy the logo extracted from the supplied company profile.
-logo_source = BASE_DIR / "assets" / "penaloys-logo-bold-small.png"
+# Copy the logo if it exists in the project
+logo_source = assets / "penaloys-logo-bold-small.png"
 logo_destination = assets / "penaloys-logo.png"
 
 if logo_source.exists() and not logo_destination.exists():
