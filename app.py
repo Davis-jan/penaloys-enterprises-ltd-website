@@ -1,9 +1,10 @@
 from pathlib import Path
 import shutil, zipfile, textwrap
 from flask import Flask, render_template
+from pathlib import Path
 
-base = Path("/mnt/data/Penaloys_Website")
-assets = base / "assets"
+BASE_DIR = Path(__file__).resolve().parent
+assets = BASE_DIR / "assets"
 assets.mkdir(parents=True, exist_ok=True)
 
 # Copy the logo extracted from the supplied company profile.
