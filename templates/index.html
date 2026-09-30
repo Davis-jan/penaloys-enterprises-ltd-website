@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Penaloys Enterprises Limited | General Supplies and Construction">
+  <title>Penaloys Enterprises Limited</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Penaloys Enterprises Limited home">
+        <img src="{{ url_for('static', filename='assets/penaloys-logo.png') }}" alt="Penaloys Enterprises Limited logo">
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#values">Values</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">GENERAL SUPPLIES AND CONSTRUCTION</p>
+        <h1>Reliable Solutions,<br><span>Lasting Value.</span></h1>
+        <p class="hero-text">
+          Dependable solutions for public and private sector clients,
+          delivered with quality, integrity, reliability and professionalism.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#services">Explore Our Services</a>
+          <a class="btn btn-outline" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">01 / ABOUT THE COMPANY</p>
+          <h2>Building a strong and reputable enterprise through dependable service.</h2>
+        </div>
+        <div class="copy">
+          <p>
+            PENALOYS ENTERPRISES LIMITED was established to pursue business opportunities
+            in general supplies, construction, and related services across the public and
+            private sectors.
+          </p>
+          <p>
+            The company seeks to respond to the growing demand for reliable suppliers
+            and service providers while creating sustainable business opportunities
+            for its stakeholders.
+          </p>
+          <p>
+            We aim to develop lasting relationships with clients and partners while
+            continuously expanding our capacity to meet diverse market needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="container vision-grid">
+        <article class="feature-card">
+          <span class="number">01</span>
+          <h3>Our Vision</h3>
+          <p>To be a trusted leader in quality and reliable service delivery.</p>
+        </article>
+        <article class="feature-card">
+          <span class="number">02</span>
+          <h3>Our Mission</h3>
+          <p>To provide dependable solutions through quality service, integrity, and commitment to our clients.</p>
+        </article>
+        <article class="feature-card">
+          <span class="number">03</span>
+          <h3>Primary Business</h3>
+          <p>General supplies and construction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section dark" id="services">
+      <div class="container">
+        <div class="section-heading light">
+          <p class="section-label">02 / OUR SERVICES</p>
+          <h2>Solutions tailored to different specifications and project requirements.</h2>
+          <p>
+            Our approach is flexible, allowing us to respond to different scopes of work
+            and requirements across public and private sector assignments.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">01</div>
+            <h3>General Supplies</h3>
+            <p>Dependable supply of goods to meet the requirements of public and private sector clients.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">02</div>
+            <h3>Construction</h3>
+            <p>Construction works delivered according to specification, scope of work and project requirements.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">03</div>
+            <h3>Related Services</h3>
+            <p>Supporting services that complement our supply and construction work, tailored to each assignment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="values section" id="values">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">03 / CORE VALUES</p>
+          <h2>Principles that guide how we work.</h2>
+        </div>
+
+        <div class="value-grid">
+          <article><span>01</span><h3>Integrity</h3><p>Honest and transparent dealings in everything we do.</p></article>
+          <article><span>02</span><h3>Quality</h3><p>Dependable standards in every assignment we deliver.</p></article>
+          <article><span>03</span><h3>Reliability</h3><p>Doing what we promise, when we promise it.</p></article>
+          <article><span>04</span><h3>Professionalism</h3><p>Serving every client with skill, courtesy and respect.</p></article>
+          <article><span>05</span><h3>Customer Focus</h3><p>Putting the needs of our clients first.</p></article>
+          <article><span>06</span><h3>Accountability</h3><p>Taking full responsibility for our work and results.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section" id="why-us">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">04 / WHY CHOOSE US</p>
+          <h2>Quality, reliability and professional service.</h2>
+          <p class="lead">
+            We are committed to delivering quality, reliable, and professional services
+            at competitive rates while prioritising client needs, integrity, accountability
+            and timely delivery.
+          </p>
+        </div>
+
+        <div class="check-list">
+          <div><span>✓</span> Quality, reliable and professional services</div>
+          <div><span>✓</span> Competitive rates</div>
+          <div><span>✓</span> Client needs come first</div>
+          <div><span>✓</span> Integrity and accountability</div>
+          <div><span>✓</span> Timely delivery</div>
+          <div><span>✓</span> Flexible solutions that create lasting value</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="objectives section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">05 / COMPANY OBJECTIVES</p>
+          <h2>Focused on sustainable business growth and dependable service.</h2>
+        </div>
+        <div class="objective-list">
+          <div><b>01</b><span>To deliver quality and reliable services.</span></div>
+          <div><b>02</b><span>To meet client needs efficiently and professionally.</span></div>
+          <div><b>03</b><span>To build lasting relationships with clients and partners.</span></div>
+          <div><b>04</b><span>To provide competitive and value-driven solutions.</span></div>
+          <div><b>05</b><span>To achieve sustainable business growth and development.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section dark" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label light-label">06 / CONTACT US</p>
+          <h2>Let's discuss your next assignment.</h2>
+          <p>
+            Contact PENALOYS ENTERPRISES LIMITED for general supplies,
+            construction and related services.
+          </p>
+        </div>
+
+        <div class="contact-details">
+          <a href="tel:+254797490032">
+            <small>TELEPHONE</small>
+            <strong>+254 797 490 032</strong>
+          </a>
+          <a href="mailto:penaloys@gmail.com">
+            <small>EMAIL</small>
+            <strong>penaloys@gmail.com</strong>
+          </a>
+          <div>
+            <small>POSTAL ADDRESS</small>
+            <strong>P.O. Box 181-40222, Oyugis</strong>
+          </div>
+          <div>
+            <small>PHYSICAL LOCATION</small>
+            <strong>Ringa, Along Kisii-Kisumu Road, Homa Bay County, Kenya</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <img src="{{ url_for('static', filename='assets/penaloys-logo.png') }}" alt="Penaloys Enterprises Limited logo">
+      <p>© 2026 PENALOYS ENTERPRISES LIMITED. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
