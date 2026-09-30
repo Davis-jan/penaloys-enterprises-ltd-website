@@ -8,7 +8,11 @@ assets = BASE_DIR / "assets"
 assets.mkdir(parents=True, exist_ok=True)
 
 # Copy the logo extracted from the supplied company profile.
-shutil.copy("C:\\Users\\Admin\\Downloads\\penaloys-logo-bold-small.png", assets / "penaloys-logo.png")
+logo_source = BASE_DIR / "assets" / "penaloys-logo-bold-small.png"
+logo_destination = assets / "penaloys-logo.png"
+
+if logo_source.exists() and not logo_destination.exists():
+    shutil.copy(logo_source, logo_destination)
 
 html = r'''<!DOCTYPE html>
 <html lang="en">
